@@ -6,7 +6,7 @@ Requires at least: 3.0
 Tested up to: 3.5
 Stable tag: 0.1.0
 
-Add button <code /> to the rich editor.
+Add button for code element to the editor.
 
 == Description ==
 
