@@ -39,7 +39,7 @@ public function wp_fullscreen_buttons($buttons)
 {
     $buttons[] = 'separator';
     $buttons['code-element'] = array(
-        'title' => __('Code'),
+        'title' => 'Code',
         'onclick' => "tinyMCE.execCommand('mceCodeElement');",
         'both' => false
     );
