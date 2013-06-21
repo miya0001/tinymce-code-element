@@ -24,6 +24,7 @@ Add button for code element to the wordpress editor.
 == Screenshots ==
 
 1. Visual Editor.
+2. Full-Screen Editor.
 
 == Credits ==
 
