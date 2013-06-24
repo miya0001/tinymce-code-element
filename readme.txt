@@ -4,7 +4,7 @@ Donate link: http://wpist.me/
 Tags: tinymce, visual editor, rich editor, code
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 0.1.0
+Stable tag: 0.5.0
 
 Add button for code element to the editor.
 
