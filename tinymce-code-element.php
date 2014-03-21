@@ -30,7 +30,7 @@ public function admin_head()
 {
     echo '<style type="text/css">';
     printf(
-        'span.mce_code-element{background-image: url(%s) !important; background-position: center center !important;}',
+        'span.mce_code-element,.mce-i-code-element{background-image: url(%s) !important; background-position: center center !important;}',
         TINYMCE_CODE_PLUGIN_URL.'/mce_plugins/code-element/img/icon.png'
     );
     echo '</style>';
