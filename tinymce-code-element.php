@@ -4,7 +4,7 @@ Plugin Name: TinyMCE Code Element
 Plugin URI: http://wpist.me/
 Description: Add button for code element to the rich editor.
 Author: Takayuki Miyauchi
-Version: 0.5.0
+Version: 0.6.0
 Author URI: http://wpist.me/
 */
 
@@ -12,11 +12,12 @@ define('TINYMCE_CODE_PLUGIN_URL', plugins_url('', __FILE__));
 
 require_once(dirname(__FILE__).'/includes/AddEditorPlugin.php');
 
-new TinyMCE_Code();
+$tinymce_code = new TinyMCE_Code();
+$tinymce_code->register();
 
 class TinyMCE_Code{
 
-function __construct()
+function register()
 {
     if (is_admin()) {
         add_action('admin_head', array($this, 'admin_head'));

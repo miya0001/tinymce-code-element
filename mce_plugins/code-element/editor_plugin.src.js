@@ -9,13 +9,11 @@
                     if ( ed.selection.isCollapsed() ) {
                         ed.execCommand('mceInsertContent', false, " <code>code</code> ");
                     } else {
-                        var code = jQuery('<code />');
-                        code.html(ed.selection.getContent());
-                        ed.execCommand(
-                            'mceReplaceContent',
-                            false,
-                            jQuery('<div />').append(code).html()
-                        );
+                        tinymce.activeEditor.selection.setNode(tinymce.activeEditor.dom.create(
+                            'code',
+                            {},
+                            ed.selection.getContent()
+                        ));
                     }
                 } else {
                     ed.execCommand('mceRemoveNode', false, e);
